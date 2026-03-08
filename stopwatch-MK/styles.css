@@ -1,0 +1,133 @@
+/*
+styles.css for Timer and Countdown Web App
+Follows early web utility aesthetic (2005–2015):
+- Symmetrical split layout
+- Large sans-serif typography
+- Oversized arrow icons
+- High-contrast palette: dark blue, light gray, bright green/red gradients
+- Thick outlines, basic gradients, large pill-style buttons
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f2f2;
+  color: #1a237e;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: 2px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 80vh;
+  margin: 0 2vw;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e3e6ee;
+  border-radius: 32px;
+  margin: 0 1vw;
+  box-shadow: 0 0 24px 0 #1a237e33;
+  border: 4px solid #1a237e;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.time-display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 4px;
+  color: #1a237e;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pill-button {
+  font-size: 1.5rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 40px;
+  border: 3px solid #1a237e;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #1a237e;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px 0 #1a237e22;
+}
+
+.pill-button.stop {
+  background: linear-gradient(90deg, #ff0844 0%, #ffb199 100%);
+  color: #fff;
+}
+
+.pill-button.reset {
+  background: #fff;
+  color: #1a237e;
+}
+
+.pill-button:active {
+  filter: brightness(0.95);
+}
+
+.arrow-icon {
+  font-size: 3rem;
+  margin: 0 0.5rem;
+  color: #43e97b;
+  vertical-align: middle;
+}
+
+.arrow-icon.stop {
+  color: #ff0844;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-time {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  border: 2px solid #1a237e;
+  background: #fff;
+  color: #1a237e;
+  width: 6rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .section {
+    margin: 2vw 0;
+    min-height: 40vh;
+  }
+}

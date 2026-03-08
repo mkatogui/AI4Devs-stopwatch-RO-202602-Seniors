@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timer and Countdown</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</h1>
+<div class="app-container">
+	<div class="section" id="stopwatch-section">
+		<div class="section-title">Stopwatch</div>
+		<div class="time-display" id="stopwatch-display">00:00:00.00</div>
+		<div class="button-group">
+			<button class="pill-button" id="stopwatch-start"><span class="arrow-icon">▶</span> Start</button>
+			<button class="pill-button stop" id="stopwatch-stop"><span class="arrow-icon stop">■</span> Stop</button>
+			<button class="pill-button reset" id="stopwatch-reset">Reset</button>
+		</div>
+	</div>
+	<div class="section" id="countdown-section">
+		<div class="section-title">Countdown</div>
+		<div class="time-display" id="countdown-display">00:00:00</div>
+		<div class="input-group">
+			<input type="number" class="input-time" id="countdown-hours" min="0" max="99" placeholder="hh">
+			<span>:</span>
+			<input type="number" class="input-time" id="countdown-minutes" min="0" max="59" placeholder="mm">
+			<span>:</span>
+			<input type="number" class="input-time" id="countdown-seconds" min="0" max="59" placeholder="ss">
+		</div>
+		<div class="button-group">
+			<button class="pill-button" id="countdown-start"><span class="arrow-icon">▶</span> Start</button>
+			<button class="pill-button stop" id="countdown-stop"><span class="arrow-icon stop">■</span> Stop</button>
+			<button class="pill-button reset" id="countdown-reset">Reset</button>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
